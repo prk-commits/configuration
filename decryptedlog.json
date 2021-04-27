@@ -1,0 +1,1215 @@
+{
+  "services": {
+    "qms": {
+      "enableCannedSearch": true,
+      "enableQmsChannels": true,
+      "subRegions": [],
+      "qmsUrl": "https://qms-content.de.skyq.sky.com/qms-content-2.x/r20/menu/",
+      "homeBookmark": "HOME",
+      "browseBookmark": "MENU-BROWSE"
+    },
+    "catFeed": {
+      "catFeedBaseUrl": "https://ie.api.atom.nowtv.com/adapter-nucleus/v2/query/brands/go/devices/android/platform/tablet",
+      "catFeedNavIdentifier": "Q"
+    },
+    "hawk": {
+      "hawkLinearUrl": "https://awk.epgsky.com/hawk/linear/",
+      "hawkOnDemandUrl": "https://awk.epgsky.com/hawk/ondemand/"
+    },
+    "falcon": {
+      "falconLinearUrl": "https://atlantis.epgsky.com/",
+      "falconOnDemandUrl": "https://falke.epgsky.com/"
+    },
+    "bingeviewing": {
+      "baseUrl": "https://bingeviewing.search.sky.com",
+      "consolidationBookmarksLimit": 20,
+      "continueWatchingBookmarksCount": 40
+    },
+    "ottDigest": {
+      "baseUrl": "https://awk.epgsky.com"
+    },
+    "common": {
+      "regions": [
+        {
+          "iso2CountryCode": "DE",
+          "iso3CountryCode": "DEU",
+          "defaultBouquet": "4",
+          "defaultSubBouquet": "0"
+        },
+        {
+          "iso2CountryCode": "AT",
+          "iso3CountryCode": "AUT",
+          "defaultBouquet": "4",
+          "defaultSubBouquet": "0"
+        }
+      ]
+    },
+    "sps": {
+      "redirectUri": "uma://uma.sky.com",
+      "serverUrl": "https://p.sky.com",
+      "networkTimeout": 30000,
+      "singleSignInEnabled": true,
+      "sharedTokenPrefix": "SKYGO",
+      "debugHmac": false,
+      "signatureVerificationRequired": true,
+      "clientId": "skygo-android",
+      "exchangeTokenUrl": "https://id.sky.de/sky/ident/token"
+    },
+    "tvServices": {
+      "tvServicesBaseUrl": "https://secure-epgservices.sky.com/",
+      "enableRemoteRecordDownloadWithViewingCard": true,
+      "remoteRecordDownloadPropositions": [
+        "skygo",
+        "skyplus"
+      ]
+    },
+    "recommendations": {
+      "sort": {
+        "isEnabled": true,
+        "baseUrl": "https://api.recs.sky.com"
+      },
+      "enrichment": {
+        "isEnabled": true,
+        "baseUrl": "https://almanac.search.sky.com/",
+        "railsLimit": 5,
+        "itemsPerRailLimit": 20,
+        "loggedOutRecommenders": [
+          "popularity"
+        ]
+      },
+      "moreLikeThis": {
+        "isEnabled": true,
+        "baseUrl": "https://almanac.search.sky.com/",
+        "providers": [
+          {
+            "name": "Disney",
+            "contentSegment": "Cinema"
+          },
+          {
+            "name": "TNT Film",
+            "contentSegment": "Cinema"
+          },
+          {
+            "name": "KinoweltTV",
+            "contentSegment": "Cinema"
+          },
+          {
+            "name": "Sky Cinema",
+            "contentSegment": "Cinema"
+          },
+          {
+            "name": "cinema",
+            "contentSegment": "Cinema"
+          }
+        ]
+      }
+    },
+    "aggregator": {
+      "userProfile": "https://agg.oogway.sky.com:443/public/profile",
+      "cacheTime": 86400
+    },
+    "waysToWatch": {
+      "searchSuggestionsDelayMillis": 1000,
+      "liveSportsUrl": "entity/search/v1/{client}/sports-home-genre/{bouquet}/{subbouquet}/skyq/genre/sch:1dada770-673d-3368-84ae-281e83c87900?order=start&tag=live%20sport&page=1&limit=20&start={start}&src=linear",
+      "waysToWatchUrl": "https://entity.de.search.sky.com/"
+    },
+    "boxServices": {
+      "pingRequestTimeoutSeconds": 5
+    }
+  },
+  "features": {
+    "forceUpgrade": {
+      "mnSupportedAppVersionCode": 1651398465,
+      "minSupportedSdk": 21,
+      "message": {
+        "titleText": "Update erforderlich",
+        "contentText": "Bitte aktualisiere die Sky Go App im App Store, um diese weiterhin nutzen zu können.",
+        "buttonText": "Aktualisieren"
+      }
+    },
+    "inAppMessages": {
+      "messages": []
+    },
+    "bookmarking": {
+      "globalBookmarkingEnabled": true,
+      "consolidationEnabled": true
+    },
+    "pages": {
+      "pageSectionDefaultLimit": 75,
+      "pageItemRailLimit": 25,
+      "pageItemDefaultLimit": 100,
+      "pageItemRailContinueWatchingLimit": 12,
+      "pageSectionCarouselLimit": 10,
+      "branding": {
+        "4oD": {
+          "startColor": "#555555",
+          "endColor": "#30383F",
+          "logoUrl": "https://config.sky.com/assets/v3/logo-branding-tablet-all_4@3x.png"
+        },
+        "bbc": {
+          "logoUrl": "https://config.sky.com/assets/v3/logo-branding-tablet-iplayer@3x.png",
+          "brandMessage": {
+            "titleText": "BBC programmes may not be played within the Sky Go app",
+            "subtitleText": "You can still download programmes to your Sky Box.",
+            "positiveActionText": "Continue",
+            "negativeActionText": "Don't tell me again"
+          }
+        },
+        "my5": {
+          "startColor": "#051E66",
+          "endColor": "#00050F",
+          "logoUrl": "https://config.sky.com/assets/v3/logo-branding-tablet-channel_5@3x.png"
+        },
+        "itv": {
+          "startColor": "#303030",
+          "endColor": "#000000",
+          "logoUrl": "https://config.sky.com/assets/v3/logo-branding-tablet-itv@3x.png"
+        },
+        "TV3": {
+          "startColor": "#303030",
+          "endColor": "#000000",
+          "logoUrl": "https://config.sky.com/assets/v3/logo-branding-tablet-virgin@3x.png"
+        },
+        "rte": {
+          "logoUrl": "https://config.sky.com/assets/v3/logo-branding-tablet-rte@3x.png"
+        },
+        "stv": {
+          "logoUrl": "https://config.sky.com/assets/v3/logo-branding-tablet-stv@3x.png"
+        }
+      },
+      "enableRecordingsContinueWatchingRail": false,
+      "enableContinueWatchingRail": true,
+      "enableLiveSportsRail": false,
+      "enableEntitlementsVisibilityFilter": true,
+      "onNowTabs": [
+        {
+          "title": "Sport",
+          "serviceGenre": 3
+        },
+        {
+          "title": "Serien",
+          "serviceGenre": 2
+        },
+        {
+          "title": "Filme",
+          "serviceGenre": 4
+        },
+        {
+          "title": "News",
+          "serviceGenre": 8
+        },
+        {
+          "title": "Dokus",
+          "serviceGenre": 5
+        },
+        {
+          "title": "Kids",
+          "serviceGenre": 6
+        }
+      ]
+    },
+    "analytics": {
+      "settings": {
+        "enableComScore": false,
+        "enableOmniture": true,
+        "enableConviva": true,
+        "enableKantar": false,
+        "enableDemdex": true,
+        "enableAdform": false,
+        "provider": "skyq",
+        "proposition": "go_v3",
+        "enableSentry": false,
+        "enableNewRelic": false,
+        "enableFirebasePerformance": true,
+        "enableFirebaseCrashlytics": true
+      },
+      "kantar": {
+        "siteName": "skyandroid",
+        "player": "skygo"
+      },
+      "comScore": {
+        "customerC2": "6034891",
+        "publisherSecret": "489315f0e362eb4e854fcc2ae4d5ede2",
+        "appName": "SkyGo",
+        "audienceMeasurementProject": "kwp-it",
+        "broadcasterPlatform": "Sky Go Android"
+      },
+      "conviva": {
+        "gatewayUrl": "https://sky-de.testonly.conviva.com",
+        "appSecret": "8b32f9655e8cb16b9a0a3a02871869983a1944c2",
+        "playerName": "skygo-de-android"
+      },
+      "skytags": {
+        "baseUrl": "https://analytics.faw.sky.com",
+        "viewTopic": "web-view-message-value",
+        "clickTopic": "web-click-message-value",
+        "errorTopic": "web-error-message-value",
+        "backgroundErrorReportingEnabled": false
+      },
+      "demdex": {
+        "dpid": "20914",
+        "crmKey": "cHash"
+      },
+      "adobe": {
+        "heartbeatServer": "http://skydeutschland.hb.omtrdc.net"
+      },
+      "adform": {
+        "adformTrackingId": 0
+      },
+      "sentry": {
+        "clientKeyTest": "https://1a5afa65929b4880a4163386b024d7fb@sentry.prd.a.skygo.gdps.sky.com/3",
+        "clientKeyProd": "https://1a5afa65929b4880a4163386b024d7fb@sentry.prd.a.skygo.gdps.sky.com/3",
+        "maxBreadcrumbs": 15,
+        "reported": {
+          "errors": {
+            "ui": true,
+            "background": true
+          },
+          "exceptions": true
+        }
+      },
+      "newRelic": {
+        "newRelicKey": "AAa9ef6adaaeb1eeb6462b7d160a7f04af959ef9e7-NRMA"
+      }
+    },
+    "advertisement": {
+      "settings": {
+        "enableYospace": true,
+        "enableFreewheel": true,
+        "linearAdvertProviders": [
+          {
+            "provider": "Yospace",
+            "supportedRatings": [
+              "6",
+              "12",
+              "16",
+              "18",
+              "18+"
+            ],
+            "isDefault": false
+          },
+          {
+            "provider": "Freewheel",
+            "supportedRatings": [
+              "0"
+            ],
+            "isDefault": true
+          }
+        ],
+        "vodAdvert": "Freewheel",
+        "enableChannelLoaderAdverts": false,
+        "baseUrl": "",
+        "enableSkipFeature": false,
+        "enableBottomBarAdverts": false,
+        "enableInAppAdverts": false,
+        "enableSkipProvider": false
+      },
+      "freewheel": {
+        "vod": {
+          "server": "https://6021f.v.fwmrm.net/ad/g/1/",
+          "mediator": "",
+          "networkID": "393759",
+          "profile": "393759:sky_de_android_live",
+          "deviceType": "SkyGO_Android_$DEVICE_App_Registered",
+          "slotGraceTimeOut": 6,
+          "slotWindowTimeout": 604800000,
+          "requestTimeout": 3,
+          "flags": "sltp,slcb,vicb,qtcb,emcr",
+          "caidPrefix": "QSID_",
+          "vastProvider": "FREEWHEEL",
+          "preferredMediaType": "application/x-mpegurl"
+        },
+        "linear": {
+          "server": "https://6021f.v.fwmrm.net/ad/g/1/",
+          "mediator": "",
+          "networkID": "393759",
+          "profile": "393759:sky_de_android_live",
+          "deviceType": "SkyGO_Android_$DEVICE_App_Registered",
+          "slotGraceTimeOut": 6,
+          "slotWindowTimeout": 604800000,
+          "requestTimeout": 3,
+          "flags": "sltp,slcb,vicb,qtcb,emcr",
+          "caidPrefix": "QSID_",
+          "vastProvider": "FREEWHEEL",
+          "preferredMediaType": "application/x-mpegurl"
+        }
+      },
+      "yospace": {
+        "tags": "YMID;YCSP;YSEQ;YTYP;YDUR",
+        "deviceType": "SkyGO_Android_Tablet_App_Registered",
+        "failoverEnabled": false
+      },
+      "skippability": {
+        "adBreakMinimumDurationMs": 15000,
+        "countdownDurationMs": 15000
+      }
+    },
+    "playback": {
+      "settings": {
+        "dataInactivityTimeoutSeconds": 120,
+        "sourceOpenTimeoutSeconds": 120,
+        "id3tagstimeout": 60000,
+        "initialBufferDurationSeconds": 2,
+        "enableWatchNext": true,
+        "enableWatchNextKeepAwake": true,
+        "enableMultiAudio": true,
+        "enableRunModeOne": true,
+        "enableVideoAdobeTracker": false,
+        "enableVideoAdobeHeartbeat": true,
+        "enableNextEpisode": true,
+        "enableOttPinBlock": true,
+        "enablePlusThreeLinearAgeRatings": false,
+        "enableNoPinSetup": true,
+        "enableLinearRestart": true,
+        "enableSubtitles": true,
+        "enableMultipleCdnSupport": false,
+        "ottLinearPinHandler": "DEFAULT",
+        "ottVodPinHandler": "LOCAL",
+        "enableLinearStreamingViaGateway": false,
+        "enableForcePlayback": true,
+        "enablePictureInPicture": true,
+        "enableExtraParameters": false,
+        "extraParameters": {
+          "android": [],
+          "arch": []
+        }
+      },
+      "subtitles": {
+        "ottLinear": true,
+        "ottVOD": true,
+        "boxLinear": false,
+        "boxSideloads": false
+      },
+      "linearRestart": {
+        "guardStartDuration": 0,
+        "guardEndDuration": 0,
+        "linearRestartOffset": 0
+      },
+      "watchNext": {
+        "countdownLessThan15Minutes": 20,
+        "countdownGreaterThan15Minutes": 30,
+        "watchNextUrlTemplate": "https://bingeviewing.search.sky.com/watchnext/v1/"
+      },
+      "keepAwake": {
+        "promptTimeInSeconds": 14400
+      },
+      "ottPinLock": {
+        "pinLockoutSecs": 600
+      },
+      "sportsRecap": {
+        "isEnabled": false,
+        "regions": {
+          "DE": [
+            {
+              "sid": "221",
+              "serviceKeyLuna": "SkyDESport1"
+            },
+            {
+              "sid": "129",
+              "serviceKeyLuna": "SkyDESport1"
+            },
+            {
+              "sid": "222",
+              "serviceKeyLuna": "SkyDESport2"
+            },
+            {
+              "sid": "114",
+              "serviceKeyLuna": "SkyDESport2"
+            },
+            {
+              "sid": "223",
+              "serviceKeyLuna": "SkyDESportBL1"
+            },
+            {
+              "sid": "105",
+              "serviceKeyLuna": "SkyDESportBL1"
+            },
+            {
+              "sid": "262",
+              "serviceKeyLuna": "SkyDESportBL2"
+            },
+            {
+              "sid": "267",
+              "serviceKeyLuna": "SkyDESportBL2"
+            },
+            {
+              "sid": "272",
+              "serviceKeyLuna": "SkyDESportBL3"
+            },
+            {
+              "sid": "277",
+              "serviceKeyLuna": "SkyDESportBL3"
+            },
+            {
+              "sid": "282",
+              "serviceKeyLuna": "SkyDESportBL4"
+            },
+            {
+              "sid": "287",
+              "serviceKeyLuna": "SkyDESportBL4"
+            },
+            {
+              "sid": "292",
+              "serviceKeyLuna": "SkyDESportBL5"
+            },
+            {
+              "sid": "297",
+              "serviceKeyLuna": "SkyDESportBL5"
+            },
+            {
+              "sid": "302",
+              "serviceKeyLuna": "SkyDESportBL6"
+            },
+            {
+              "sid": "307",
+              "serviceKeyLuna": "SkyDESportBL6"
+            }
+          ]
+        },
+        "headerApiKey": "aZ2e01HrWlaYC7WdleteQ8yE4FxJHYZ89ModvyFv",
+        "baseUrl": "https://luna.spex.aidisco.sky.com/",
+        "refresh": 60000
+      }
+    },
+    "actions": {
+      "unplayableChannels": [
+        {
+          "brand": "BBC",
+          "pattern": "(?i)^.*(radio 1|cbeebies|s4c|bbc).*$"
+        }
+      ],
+      "enableRemoteDownload": false,
+      "enableRemoteRecord": true
+    },
+    "boxConnectivity": {
+      "enableBoxConnection": true,
+      "failedPingCountLi": 3,
+      "pingIntervalSeconds": 5
+    },
+    "rateMe": {
+      "enableRateMe": true,
+      "numberStartups": 15
+    },
+    "downloads": {
+      "enableDownloadOverCellular": true,
+      "phoneBitrate": 950000,
+      "tabletBitrate": 1450000,
+      "pinNotSetPrompt": true,
+      "enableSideloads": false
+    },
+    "drm": {
+      "properties": {}
+    },
+    "pin": {
+      "deviceFooterText": "Bitte gib Deine Jugendschutz-PIN ein.",
+      "tvFooterText": "Bitte gib Deine Jugendschutz-PIN ein.",
+      "options": [
+        {
+          "subtitle": {
+            "text": "Die Jugendschutz-PIN wird standardmäßig zu folgenden Sendezeiten abgefragt: Inhalte ab  von 06:00-r, ab  von 06:00-22:00 Uhr, ab  von 06:00-23:00 Uhr.",
+            "contentDescription": "Die Jugendschutz-PIN wird standardmäßig zu folgenden Sendezeiten abgefragt: Inhalte ab 12 Jahren von 06:00-20:00 Uhr, ab 16 von 06:00-22:00 Uhr, ab 18 von 06:00-23:00 Uhr."
+          },
+          "title": {
+            "text": "Standardmäßig"
+          },
+          "defaultRating": "18+",
+          "type": {
+            "type": "standard",
+            "watershedDefault": [
+              {
+                "id": 1,
+                "beginTime": {
+                  "hours": "06",
+                  "minutes": "00"
+                },
+                "endTime": {
+                  "hours": "20",
+                  "minutes": "00"
+                },
+                "rating": "12"
+              },
+              {
+                "id": 2,
+                "beginTime": {
+                  "hours": "20",
+                  "minutes": "00"
+                },
+                "endTime": {
+                  "hours": "22",
+                  "minutes": "00"
+                },
+                "rating": "16"
+              },
+              {
+                "id": 3,
+                "beginTime": {
+                  "hours": "22",
+                  "minutes": "00"
+                },
+                "endTime": {
+                  "hours": "23",
+                  "minutes": "00"
+                },
+                "rating": "18"
+              }
+            ]
+          }
+        },
+        {
+          "defaultRating": "18+",
+          "subtitle": {
+            "text": "Die Jugendschutz-PIN-Abfrage erfolgt individuell."
+          },
+          "title": {
+            "text": "Individuell"
+          },
+          "type": {
+            "type": "custom",
+            "ratingSelection": {
+              "title": "Ab welcher Altersstufe soll sie abgefragt werden?",
+              "availableRatings": [
+                "0",
+                "6",
+                "12",
+                "16",
+                "18"
+              ],
+              "defaultRating": "12"
+            },
+            "watershedSelection": {
+              "title": "Undertitel",
+              "availableWatershedLimits": [
+                {
+                  "id": 1,
+                  "beginTime": {
+                    "hours": "00",
+                    "minutes": "00"
+                  },
+                  "endTime": {
+                    "hours": "24",
+                    "minutes": "00"
+                  }
+                },
+                {
+                  "id": 2,
+                  "beginTime": {
+                    "hours": "06",
+                    "minutes": "00"
+                  },
+                  "endTime": {
+                    "hours": "20",
+                    "minutes": "00"
+                  }
+                }
+              ],
+              "defaultWatershedLimitId": 2
+            }
+          }
+        },
+        {
+          "defaultRating": "18+",
+          "subtitle": {
+            "text": "Die Jugendschutz-PIN-Abfrage ist deaktiviert."
+          },
+          "title": {
+            "text": "Nie"
+          },
+          "type": {
+            "type": "turnedOff"
+          }
+        }
+      ]
+    },
+    "recordings": {
+      "items": [
+        {
+          "title": "Fortsetzen",
+          "type": "CONTINUE_WATCHING"
+        },
+        {
+          "title": "Neu",
+          "type": "MOST_RECENT"
+        },
+        {
+          "title": "Alle",
+          "type": "A_Z"
+        },
+        {
+          "title": "Genres",
+          "type": "SORT_BY",
+          "filterItems": [
+            {
+              "title": "Filme",
+              "type": "MOVIES",
+              "eventGenres": [
+                {
+                  "id": 1,
+                  "blacklistedSubGenres": [
+                    5,
+                    8
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Serien & Shows",
+              "type": "ENTERTAINMENT",
+              "eventGenres": [
+                {
+                  "id": 0
+                },
+                {
+                  "id": 1,
+                  "blacklistedSubGenres": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    6,
+                    7,
+                    8
+                  ]
+                },
+                {
+                  "id": 2
+                },
+                {
+                  "id": 3
+                },
+                {
+                  "id": 6
+                },
+                {
+                  "id": 7
+                },
+                {
+                  "id": 8
+                },
+                {
+                  "id": 9
+                },
+                {
+                  "id": 10
+                }
+              ]
+            },
+            {
+              "title": "Kids",
+              "type": "KIDS",
+              "eventGenres": [
+                {
+                  "id": 5
+                },
+                {
+                  "id": 1,
+                  "blacklistedSubGenres": [
+                    1,
+                    3,
+                    7,
+                    8
+                  ],
+                  "rating": "0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Geplant",
+          "type": "SCHEDULED"
+        }
+      ]
+    },
+    "tvguide": {
+      "filterGenres": [
+        {
+          "title": "Alle Sender"
+        },
+        {
+          "title": "HD",
+          "format": "HD"
+        },
+        {
+          "title": "Unterhaltung",
+          "serviceGenre": 12
+        },
+        {
+          "title": "Serien",
+          "serviceGenre": 2
+        },
+        {
+          "title": "Sport",
+          "serviceGenre": 3
+        },
+        {
+          "title": "Filme",
+          "serviceGenre": 4
+        },
+        {
+          "title": "Dokus",
+          "serviceGenre": 5
+        },
+        {
+          "title": "Kids",
+          "serviceGenre": 6
+        },
+        {
+          "title": "Musik",
+          "serviceGenre": 7
+        },
+        {
+          "title": "News & Intl.",
+          "serviceGenre": 8
+        },
+        {
+          "title": "Regional",
+          "serviceGenre": 9
+        },
+        {
+          "title": "Marktplatz",
+          "serviceGenre": 10
+        }
+      ],
+      "channelFilters": [
+        {
+          "title": "Livestreams",
+          "serviceTypes": [
+            "OTT"
+          ]
+        },
+        {
+          "title": "Alle Sender",
+          "serviceTypes": [
+            "OTT",
+            "DSAT"
+          ]
+        }
+      ]
+    },
+    "channels": {
+      "lowestAllowedNumber": 1,
+      "highestAllowedNumber": 9999,
+      "disallowedServiceTypes": [
+        "OFTA"
+      ],
+      "emergencyChannels": [
+        {
+          "channelTitle": "Sky Sport Bundesliga 1 HD",
+          "channelId": "105",
+          "channelNumber": 211
+        },
+        {
+          "channelTitle": "Sky Sport 1 HD",
+          "channelId": "129",
+          "channelNumber": 221
+        },
+        {
+          "channelTitle": "Sky Sport News HD",
+          "channelId": "108",
+          "channelNumber": 200
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 2 HD",
+          "channelId": "267",
+          "channelNumber": 212
+        },
+        {
+          "channelTitle": "Sky Sport 2 HD",
+          "channelId": "114",
+          "channelNumber": 222
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 3 HD",
+          "channelId": "277",
+          "channelNumber": 213
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 4 HD",
+          "channelId": "287",
+          "channelNumber": 214
+        },
+        {
+          "channelTitle": "Sky Sport 5 HD",
+          "channelId": "288",
+          "channelNumber": 225
+        },
+        {
+          "channelTitle": "Sky Sport 3 HD",
+          "channelId": "268",
+          "channelNumber": 223
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 5 HD",
+          "channelId": "297",
+          "channelNumber": 215
+        },
+        {
+          "channelTitle": "ZDF HD",
+          "channelId": "1110",
+          "channelNumber": 162
+        },
+        {
+          "channelTitle": "Das Erste HD",
+          "channelId": "826",
+          "channelNumber": 161
+        },
+        {
+          "channelTitle": "Sky Sport 4 HD",
+          "channelId": "278",
+          "channelNumber": 224
+        },
+        {
+          "channelTitle": "Sky 1 HD",
+          "channelId": "147",
+          "channelNumber": 100
+        },
+        {
+          "channelTitle": "Eurosport 1 HD",
+          "channelId": "2502",
+          "channelNumber": 239
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 6 HD",
+          "channelId": "307",
+          "channelNumber": 216
+        },
+        {
+          "channelTitle": "Fox HD",
+          "channelId": "124",
+          "channelNumber": 115
+        },
+        {
+          "channelTitle": "Sky Sport Austria HD",
+          "channelId": "143",
+          "channelNumber": 235
+        },
+        {
+          "channelTitle": "Sky Cinema HD",
+          "channelId": "131",
+          "channelNumber": 300
+        },
+        {
+          "channelTitle": "Eurosport 2 HD",
+          "channelId": "109",
+          "channelNumber": 240
+        },
+        {
+          "channelTitle": "TNT Serie HD",
+          "channelId": "123",
+          "channelNumber": 116
+        },
+        {
+          "channelTitle": "zdf_neo HD",
+          "channelId": "1130",
+          "channelNumber": 175
+        },
+        {
+          "channelTitle": "SYFY HD",
+          "channelId": "126",
+          "channelNumber": 118
+        },
+        {
+          "channelTitle": "Sky Cinema Action HD",
+          "channelId": "116",
+          "channelNumber": 304
+        },
+        {
+          "channelTitle": "13th Street HD",
+          "channelId": "127",
+          "channelNumber": 119
+        },
+        {
+          "channelTitle": "Sky Krimi",
+          "channelId": "23",
+          "channelNumber": 131
+        },
+        {
+          "channelTitle": "NatGeo HD",
+          "channelId": "112",
+          "channelNumber": 401
+        },
+        {
+          "channelTitle": "Sky Cinema Comedy",
+          "channelId": "8",
+          "channelNumber": 326
+        },
+        {
+          "channelTitle": "Sky Atlantic HD",
+          "channelId": "110",
+          "channelNumber": 104
+        },
+        {
+          "channelTitle": "Nat Geo Wild HD",
+          "channelId": "118",
+          "channelNumber": 402
+        },
+        {
+          "channelTitle": "Sky Sport 6 HD",
+          "channelId": "298",
+          "channelNumber": 226
+        },
+        {
+          "channelTitle": "Disney Cinemagic",
+          "channelId": "25",
+          "channelNumber": 329
+        },
+        {
+          "channelTitle": "TNT Comedy HD",
+          "channelId": "136",
+          "channelNumber": 127
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 7 HD",
+          "channelId": "317",
+          "channelNumber": 217
+        },
+        {
+          "channelTitle": "Sky Cinema Nostalgie",
+          "channelId": "516",
+          "channelNumber": 328
+        },
+        {
+          "channelTitle": "Discovery HD",
+          "channelId": "130",
+          "channelNumber": 409
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 8 HD",
+          "channelId": "327",
+          "channelNumber": 218
+        },
+        {
+          "channelTitle": "Sky Cinema Family HD",
+          "channelId": "139",
+          "channelNumber": 305
+        },
+        {
+          "channelTitle": "Sky Sport 8 HD",
+          "channelId": "318",
+          "channelNumber": 228
+        },
+        {
+          "channelTitle": "Sky Sport 7 HD",
+          "channelId": "308",
+          "channelNumber": 227
+        },
+        {
+          "channelTitle": "Sky Cinema Emotion",
+          "channelId": "20",
+          "channelNumber": 327
+        },
+        {
+          "channelTitle": "Spiegel Geschichte HD",
+          "channelId": "137",
+          "channelNumber": 405
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 9 HD",
+          "channelId": "337",
+          "channelNumber": 219
+        },
+        {
+          "channelTitle": "TNT Film HD",
+          "channelId": "140",
+          "channelNumber": 312
+        },
+        {
+          "channelTitle": "Romance TV",
+          "channelId": "518",
+          "channelNumber": 145
+        },
+        {
+          "channelTitle": "Sky Sport 9 HD",
+          "channelId": "328",
+          "channelNumber": 229
+        },
+        {
+          "channelTitle": "3sat HD",
+          "channelId": "1150",
+          "channelNumber": 483
+        },
+        {
+          "channelTitle": "Disney XD",
+          "channelId": "28",
+          "channelNumber": 522
+        },
+        {
+          "channelTitle": "arte HD",
+          "channelId": "604",
+          "channelNumber": 480
+        },
+        {
+          "channelTitle": "tagesschau24 HD",
+          "channelId": "734",
+          "channelNumber": 703
+        },
+        {
+          "channelTitle": "ONE HD",
+          "channelId": "605",
+          "channelNumber": 481
+        },
+        {
+          "channelTitle": "Sky Sport Bundesliga 10 HD",
+          "chanlId": "257",
+          "channelNumber": 220
+        },
+        {
+          "channelTitle": "ZDFinfo HD",
+          "channelId": "1170",
+          "channelNumber": 704
+        },
+        {
+          "channelTitle": "PHOENIX HD",
+          "channelId": "609",
+          "channelNumber": 482
+        },
+        {
+          "channelTitle": "WDR HD Köln",
+          "channelId": "8325",
+          "channelNumber": 808
+        },
+        {
+          "channelTitle": "ORF1 HD",
+          "channelId": "4911",
+          "channelNumber": 751
+        },
+        {
+          "channelTitle": "Sky Sport 10 HD",
+          "channelId": "338",
+          "channelNumber": 230
+        },
+        {
+          "channelTitle": "Sky Sport 11 HD",
+          "channelId": "258",
+          "channelNumber": 231
+        },
+        {
+          "channelTitle": "BR Fernsehen Süd HD",
+          "channelI": "631",
+          "channelNumber": 801
+        }
+      ]
+    },
+    "settings": {
+      "sections": [
+        {
+          "items": [
+            {
+              "title": "Login",
+              "type": "login"
+            }
+          ]
+        },
+        {
+          "title": "Einrichten",
+          "items": [
+            {
+              "title": "Download nur über WLAN",
+              "type": "downloadonwifionly"
+            },
+            {
+              "title": "Autoplay",
+              "type": "autoplay"
+            },
+            {
+              "title": "Mit Sky Q Receiver verbinden",
+              "type": "boxconnectivity"
+            },
+            {
+              "title": "Untertitel",
+              "type": "subtitles",
+              "languages": [
+                {
+                  "title": "Deutsch",
+                  "country_code": "de"
+                },
+                {
+                  "title": "Englisch",
+                  "country_code": "en"
+                }
+              ]
+            },
+            {
+              "title": "Audio",
+              "type": "audio",
+              "languages": [
+                {
+                  "title": "Deutsch",
+                  "country_code": "de"
+                },
+                {
+                  "title": "Englisch",
+                  "country_code": "en"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Jugendschutz",
+          "items": [
+            {
+              "title": "Zuletzt gesehen",
+              "type": "recentlywatched"
+            },
+            {
+              "title": "PIN-Abfrage",
+              "type": "devicePin"
+            },
+            {
+              "title": "Informationen",
+              "type": "web",
+              "url": "https://www.sky.de/next/web/redaktion/static/ottwebviews/parentalprotection-information-ottdevices.html"
+            }
+          ]
+        },
+        {
+          "title": "Service & Rechtliches",
+          "items": [
+            {
+              "title": "FAQs",
+              "type": "web",
+              "url": "https://www.sky.de/web/redaktion/static/ottwebviews/faq-skygo.html"
+            },
+            {
+              "title": "Datenschutz",
+              "type": "web",
+              "url": "https://www.sky.de/web/redaktion/static/ottwebviews/dataprotection-android-skygo.html"
+            },
+            {
+              "title": "Impressum",
+              "type": "web",
+              "url": "https://www.sky.de/web/redaktion/static/ottwebviews/imprint-skygo.html"
+            },
+            {
+              "title": "Lizenzhinweise",
+              "type": "web",
+              "url": "https://www.sky.de/web/redaktion/static/ottwebviews/licence-skygo-android.html"
+            },
+            {
+              "title": "Versionsnummer",
+              "type": "versionNumber"
+            },
+            {
+              "title": "Logout",
+              "type": "logout"
+            }
+          ]
+        }
+      ]
+    },
+    "common": {
+      "images": {
+        "channelLogoImageUrl": "https://de.imageservice.sky.com/logo/skychb_{service_id}{channel_name}/LOGO_NON_PADDED/{width}/{height}",
+        "paddedChannelLogoImageUrl": "https://de.imageservice.sky.com/logo/skychb_{service_id}{channel_name}/LOGO_PADDED/{width}/{height}",
+        "paddedProviderLogoImageUrl": "https://de.imageservice.sky.com/logo/skychb_{provider_name}/LOGO_PADDED/{width}/{height}",
+        "programmeImageUrl": "https://de.imageservice.sky.com/pd-image/%s/%s/%s"
+      }
+    },
+    "login": {
+      "loginUrl": "https://id.sky.de/sky/ident/auth?response_type=code&client_id=skygo-android&redirect_uri=uma://uma.sky.com&state=None&appearance=compact",
+      "authorizationKey": "c2t5cV9hcGlfc3RiX3Byb2Q6MllrUDM4UGkxTlhSYThMZGE/MGVqYlg5RzRwM3NmVDg="
+    }
+  }
+}
